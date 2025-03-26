@@ -26,6 +26,7 @@ class SpringDiApplicationTests {
 		System.out.println(myController.hello());
 	}
 
+
 	@Test
 	void contextLoads() {
 	}
