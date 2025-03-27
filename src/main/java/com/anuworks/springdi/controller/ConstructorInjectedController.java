@@ -1,7 +1,9 @@
 package com.anuworks.springdi.controller;
 
 import com.anuworks.springdi.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
     GreetingService greetingService;
 
