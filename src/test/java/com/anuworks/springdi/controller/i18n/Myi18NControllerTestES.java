@@ -1,0 +1,22 @@
+package com.anuworks.springdi.controller.i18n;
+
+import com.anuworks.springdi.controller.Myi18NController;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+
+@ActiveProfiles({"ES", "dev"})
+@SpringBootTest
+class Myi18NControllerTestES {
+
+    @Autowired
+    Myi18NController myi18NController;
+
+    @Test
+    void sayhello(){
+        System.out.println(myi18NController.sayHello());
+    }
+
+
+}

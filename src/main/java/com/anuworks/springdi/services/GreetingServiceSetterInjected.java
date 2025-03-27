@@ -1,12 +1,11 @@
 package com.anuworks.springdi.services;
 
-
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class GreetingServiceSetterInjected implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "This is from base greeting service";
+        return "This is setter injected service!!";
     }
 }
